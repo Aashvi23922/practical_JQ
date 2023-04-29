@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+    <style>
+        .div1 {
+            height: 240px;
+            width: 240px;
+            background-color: rgb(85, 5, 68);
+        }
+
+        .div2 {
+            height: 240px;
+            width: 240px;
+            background-color: rgb(85, 36, 82);
+        }
+
+        .div {
+            height: 240px;
+            width: 240px;
+            background-color: rgb(165, 72, 145);
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $(".btn1").click(function () {
+                $(".div1").addClass("div");
+            })
+
+            $(".btn2").click(function () {
+                $(".div1").removeClass("div");
+            })
+
+
+            $(".btn3").click(function () {
+                $(".div2").toggleClass("div");
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button class="btn1">Add</button>
+    <button class="btn2">Remove</button>
+    <button class="btn3">Toggle</button>
+    <br>
+    <hr>
+
+    <div class="div1"></div><br>
+    <div class="div2"></div>
+
+</body>
+
+</html>

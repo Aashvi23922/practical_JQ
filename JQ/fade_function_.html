@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .btn_ {
+            height: 250px;
+            width: 200px;
+            background-color: blueviolet;
+            display: none;
+        }
+        .btn_1{
+            height: 250px;
+            width: 200px;
+            background-color: brown;
+        }
+        .btn_2{
+            height: 250px;
+            width: 200px;
+            background-color: peru;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Fade_in</button>
+    <button id="btn1">Fade_out</button>
+    <button id="btn2">Fade_toggle</button>
+    <button id="btn3">Fade_to</button>
+
+    <hr>
+
+    <div class="btn_"></div><br>
+    <div class="btn_1"></div><br>
+    <div class="btn_2"></div>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $(".btn_").fadeIn(400);
+            })
+
+            $("#btn1").click(function () {
+                $(".btn_").fadeOut(400);
+            })
+
+            $("#btn2").click(function () {
+                $(".btn_1").fadeToggle(400);
+            })
+
+            $("#btn3").click(function () {
+                $(".btn_2").fadeTo(2000, .6);
+            })
+        })
+    </script>
+</body>
+</html>

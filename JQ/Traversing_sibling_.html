@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+
+        <script>
+            $(function () {
+                $("#btn").click(function () {
+                    // $(".main1").siblings().addClass("change");
+                    // $(".main1").next().addClass("change");
+                    // $(".main1").nextAll().addClass("change");
+                    // $(".main1").nextUntil().addClass("change");
+                    // $(".main3").prev().addClass("change");
+                    // $(".main3").prevAll().addClass("change");
+                    $(".main3").prevUntil().addClass("change");
+    
+                })
+            })
+        </script>
+
+    <style>
+        div {
+            margin: 15px;
+            border: 2px solid black;
+        }
+
+        h1 {
+            margin: 15px;
+            padding: 10px;
+            border: 2px solid rgb(250, 182, 182);
+        }
+
+        .change {
+            border: 2px solid rgb(202, 202, 247);
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Click Here</button>
+    <br>
+    <hr>
+    <div class="main">
+        <div class="main1">
+            <div class="sub1">
+                <div class="sub-1">
+                    <h1>Hola!This is ancestor function.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="sub2">
+            <div class="sub-2">
+                <h1>Hello user this is ancestor function.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="main3">
+        <div class="sub3">
+            <h1>Hello user this is ancestor function.</h1>
+        </div>
+    </div>
+
+    <div class="main4">
+        <div class="sub4">
+            <h1>Hello user this is ancestor function.</h1>
+        </div>
+    </div>
+</body>
+
+</html>
